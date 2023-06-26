@@ -5,8 +5,10 @@ export default function AboutLayout({
 }: {
   children: React.ReactNode;
 }) {
-  <div>
-    <nav>About navbar</nav>
-    {children}
-  </div>;
+  return (
+    <div>
+      <nav>About Navbar</nav>
+      {children}
+    </div>
+  );
 }
