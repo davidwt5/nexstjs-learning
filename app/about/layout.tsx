@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 export default function AboutLayout({
   children,
@@ -6,9 +7,9 @@ export default function AboutLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <>
       <nav>About Navbar</nav>
-      {children}
-    </div>
+      <main className={styles.main}>{children}</main>
+    </>
   );
 }
