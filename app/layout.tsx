@@ -11,9 +11,12 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <nav>General Navbar</nav>
-      <head />
-      <body>{children}</body>
+      <body>
+        <nav>
+          <a href="#">General Navbar</a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
